@@ -1,0 +1,60 @@
+.artexhi img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+#mdlbox{
+    background-color: rgb(91,17,56);
+    color: white;
+    font-family: 'Monotype Corsiva';
+    font-size: 20px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 145px;
+}
+.info{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.infobox-content{
+	background-color: rgb(251,193,212);
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid rgb(91,17,56);
+	width: 80%;
+}
+.cls{
+	color: rgb(239,53,71);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.cls:hover, .cls:focus{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.container1{
+    display: flex;
+    align-content: center;
+}
+.col{
+    flex: 50%;
+    padding: 5px;
+    margin-left: 20px;
+}
+.col h2{
+    text-align: center;
+    color: rgb(239,53,71);
+    font-family: 'Georgia';
+}

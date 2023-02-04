@@ -1,0 +1,114 @@
+.bg{
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.4));
+    background-size: cover;
+}
+.main{
+    margin: 0 auto;
+    padding: 64px 0;
+    width: 90%;
+    max-width: 60rem;
+}
+.main h2{
+    border-radius: 16px;
+    color: rgb(251,193,212);
+    font-size: 40px;
+    border: none;
+}
+.orderform{
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: hsl(0, 0%, 100%);
+    background: hsla(0, 0%, 100%, 0.2);
+    border: 4px solid rgb(240,28,101);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.fullwidth{
+    grid-column: span 2;
+}
+.orderform .ordbtn, fieldset, input, legend{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.orderform input{
+    border: 2px solid white;
+    /*background-color: hsl(0, 0%, 100%);
+    background: hsla(0, 0%, 100%, 0.5);*/
+    border-radius: 4px;
+}
+.orderform input[type="text"]{
+    font-family: 'Georgia';
+    color: white;
+    font-size: 15px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+.orderform input[type="radio"]{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    border-radius: 50%;
+    
+}
+.orderform input[type="radio"]:checked{
+    background-image: radial-gradient(rgb(251,193,212) 40%, transparent calc(40% + 1px));
+}
+.orderform input::placeholder{
+    color: rgb(251,193,212);
+}
+.orderform label,legend{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: 'Georgia';
+    font-weight: bold;
+    color: white;
+}
+.orderform .small{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 24px;
+    font: 15px 'Georgia';
+}
+
+.ordbtn{
+    font: 30px 'Monotype Corsiva';
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    width: 400px;
+}
+.ordbtn[type="submit"]{
+    background-color: rgb(240,28,101);
+    color: white;
+}
+.ordbtn[type="submit"]:hover{
+    background-color: rgb(140,40,80);
+}
+.ordbtn[type="reset"]{
+    color: rgb(251,193,212);
+    text-decoration: underline;
+    margin-left: 16px;
+}
+.ordbtn[type="reset"]:hover{
+    text-decoration: none;
+}
+.orderform input:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(251,193,212);
+}
+.ordbtn:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(251,193,212);
+}

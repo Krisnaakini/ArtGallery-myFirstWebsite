@@ -1,0 +1,96 @@
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.container .artbox{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .artbox:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.container .artbox .art{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .artbox .art:before{
+    /*content: '';*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,#d0f0e4,#fff);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .artbox:hover .art:before{
+    opacity: 1;
+ }
+ .container .artbox .art img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .container .artbox .detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+ }
+.container .artbox .detail h2{
+    color: white;
+    background: rgb(240,28,101);
+    background: rgba(240,28,101,0.5);
+    border-radius: 5px;
+    font-family: 'Gabriola';
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    text-align: center;
+    transform: translateY(500px);
+ }
+.container .artbox:hover .detail h2{
+    transform: translateY(10px);
+    transition-delay: 0.6s;
+}
+.detail h3, .detail p{
+    color: rgb(251,193,212);
+    background-color: rgb(240,28,101);
+    background: rgba(240,28,101,0.5);
+    font-family: 'Monotype Corsiva';
+    transition: 0.5s;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    transform: translateY(100px);
+}
+.artbox:hover .detail h3, .artbox:hover .detail p{
+    transform: translateY(5px);
+    transition-delay: 0.6s;
+}

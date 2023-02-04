@@ -1,0 +1,398 @@
+.body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header{
+    background: rgb(251,193,212);
+    color: rgb(240,28,101);
+    
+    padding: 15px 15px 15px 15px;
+}
+header h1{
+    margin: 0;
+    display: inline;
+    font-family: 'Monotype Corsiva';
+    font-size: 20pt;
+}
+nav ul{
+    margin: 0;
+    padding: 0 10px 0 0;
+    text-align: right;
+    display: inline;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-right: 1px solid rgb(91,17,56);
+}
+nav ul li a, .galbtn{
+    color: rgb(140,40,80);
+    font-family: 'Monotype Corsiva', 'serif';
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.galmenu{
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    height: 80px;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.galmenu a{
+    color: rgb(240,28,101);
+    padding-top: 15px;
+    text-decoration: none;
+    display: block;
+}
+.galmenu a:hover{
+    background-color: rgb(251,205,209);
+}
+.show{
+    display: block;
+}
+nav ul li a:hover, .galbtn:hover{
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 5px;
+}
+nav ul li a.active{
+    background-color: rgb(240,28,101);
+    background: rgb(240,28,101,0.5);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    color: wheat;
+}
+.btn{
+    float: right;
+    display: inline;
+    padding: 0 0 0 15px;
+}
+.btn button a{
+    text-decoration: none;
+    color: white;
+}
+.register{
+    height: 40px;
+    width: 100px;
+    background: rgb(240,28,101);
+    border: none;
+    opacity: 0.8;
+    font-family: 'Monotype Corsiva';
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+}
+.register:hover{
+    background: rgb(140,40,80);
+    cursor: pointer;
+    transition: 3s;
+}
+.registerForm{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    height: 350px;
+    width: 330px;
+    border: 3px solid rgb(240,28,101);
+    z-index: 9;
+}
+.form-container{
+    max-width: 330px;
+    padding: 5px;
+    bottom: 10px;
+    right: 15px;
+    max-height: 350px;
+    background-color: white;
+}
+.form-container h1{
+    font-family: 'Monotype Corsiva';
+    color: rgb(240,28,101);
+    font-size: 30px;
+    text-align: center;
+}
+.form-container label{
+    font-family: 'Monotype Corsiva';
+    color: rgb(61,27,91);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.form-container input{
+    font-family: 'Times New Roman';
+    width: 90%;
+    margin-left: 5px;
+    height: 25px;
+    border: none;
+    background: rgb(251,205,209);
+}
+.form-container input:focus{
+    background-color: rgb(217,155,237);
+    outline: none;
+}
+.form-container .sbt{
+    background-color: rgb(91,17,56);
+    color: white;
+    font-family: 'Monotype Corsiva';
+    font-size: 20px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 145px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.form-container .close{
+    background-color: rgb(240,28,101);
+    color: white;
+    font-family: 'Monotype Corsiva';
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 145px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.page-wrapper{
+    min-height: 100%;
+}
+.page-wrapper hr{
+    color: rgb(240,28,101);
+}
+.intro{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.4));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.intro h1{
+    color: white;
+    background: rgb(240,28,101);
+    background: rgba(240,28,101, 0.5);
+    border-radius:10px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Monotype Corsiva';
+    font-weight: bold;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.container .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .box .imgBox:before{
+    /*content: '';*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,#d0f0e4,#fff);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box:hover .imgBox:before{
+    opacity: 1;
+ }
+ .container .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+ }
+.container .box .content h2{
+    font-family: 'Monotype Corsiva';
+    color:#fff;
+    background: rgb(240,28,101);
+    background: rgba(240,28,101,0.5);
+    border-radius: 5px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    text-align: center;
+    transform: translateY(500px);
+ }
+.container .box:hover .content h2{
+    transform: translateY(10px);
+    transition-delay: 0.6s;
+    color: #fff;
+}
+.container .box .content h3{
+    font-family: 'Monotype Corsiva';
+    color: #fff;
+    background-color: rgb(240,28,101);
+    background: rgba(240,28,101,0.5);
+    transition: 0.5s;
+    margin-bottom: 80px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    transform: translateY(100px);
+}
+.container .box:hover .content h3{
+    transform: translateY(5px);
+    transition-delay: 0.6s;
+    color: #fff;
+}
+/*for artist html style*/
+.container1 img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+hr{
+    height: 10px;
+    background: rgb(240,28,101);
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider .slide-container{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    animation: 20s slider infinite;
+}
+.slider .slide-container img{
+    width: 33.333333333%;
+    height: 60%;
+    float: left;
+}
+@keyframes slider {
+	0% { left: 0; }
+	20% { left: 0; }
+	35% { left: -100%; }
+	45% { left: -100%; }
+	60% { left: -200%; }
+	80% { left: -200%; }
+	100% { left: 0; }
+}
+
+.footer{
+    color: #ffffff;
+    background-color: rgb(91,17,56);
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.footer .footer-bottom{
+    background-color: rgb(140,40,80);
+    color: rgba(255, 255, 255, 0.774);
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+.footer-content table{
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.footer-content h2{
+    font-family: 'Monotype Corsiva';
+    color: rgb(251,193,212);
+    font-weight: bold;
+}
+.footer-section-about p{
+    font-family: 'Georgia';
+    color: rgba(255, 255, 255, 0.767);
+    padding-right: 30px;
+    font-size: 16px;
+}
+.footer-section-links{
+    padding-left: 30px;
+}
+.footer-section-links ul{
+    padding-left: 20px;
+}
+.footer-section-links h2{
+    padding-top: 10px;
+}
+.footer-section-links li{
+    font-family: 'Monotype Corsiva';
+    color: rgba(255, 255, 255, 0.767);
+}
+.footer-section-links a{
+    color: rgba(255, 255, 255, 0.767);
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-section-links a:hover{
+    color: rgb(240,28,101);
+}
+.footer .footer-content{
+    height: 350px;
+}
+.footer-section-contact .icon i{
+    color: white;
+}
+.footer-section-contact .icon i:hover{
+    color: rgb(240,28,101);
+}
