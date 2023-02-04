@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>Paintings</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="register.js"></script>
+    </head>
+
+<body>
+    <header>
+        <nav> 
+            <h1>L O T U S</h1>   
+            <ul>
+                <li><a href = "Index.html">HOME</a></li>
+                <li>
+                    <div class="gallery"> 
+                        <button class="galbtn" onclick="galList()">GALLERY
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="galmenu" class="galmenu">
+                            <a href = "gallery1.html">Art Museum</a>
+                            <a class="active" href = "gallery2.html">Paintings</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href = "artist.html">ARTISTS</a></li>
+                <li><a href = "exhibition.html">EXHIBITION</a></li>
+                <li><a href = "contact.html">CONTACT</a></li>
+                <li><a href = "order.html">ORDER</a></li>
+                <div class="btn">
+                    <button class="register" onclick="openForm()">
+                        <a href="#form" class="regForm">Register</a>
+                    </button>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="registerForm" id="reg_form">
+
+        <form action="register.php" method="POST" class="form-container">
+            <h1>Registration Form</h1>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="uname">User Name:</label><br>
+            <input type="text" id="uname" name="uname" required><br>
+            <label for="pwd">Pass word:</label><br>
+            <input type="password" id="pwd" name="pwd" required><br>
+
+            <input type="submit" class="sbt" value="Submit">
+            <button type="button" class="close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="arts">
+        <h1 style="text-align:center; color: rgb(240,28,101); font-family: Monotype Corsiva; font-size: 50px;">Paintings</h1>
+        <p style="text-align:center; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+            Artworks have been carefully hand-picked by our team. Artworks come with Certificates of Authenticity from the Artist or Gallery.<br>
+            <b>[</b> Point your cursor on each art and see the <b>Title of the art and Name of the artist</b>.<b>]</b>
+        </p>
+    </div>
+    <br>
+
+    <div class="container">
+        &emsp;&emsp;&emsp;
+        <div class = "artbox">
+            <div class = "art">
+                <img src="artworks/SLart1.webp" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Washing the Disciples Feet</h2>
+                    <h3>By:- David Paynter</h3>
+                    <p>Price:- Rs.126,000</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/SLart2.webp" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Painting of Gothami</h2>
+                    <h3>By:- George Keyt</h3>
+                    <p>Price:- Rs.85,000</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/SLart3.webp" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Lumbini Temple Mural </h2>
+                    <h3>By:- Jayasiri Semage</h3>
+                    <p>Price:- Rs.105,450</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        &emsp;&emsp;&emsp;
+        <div class = "artbox">
+            <div class = "art">
+                <img src="artworks/ptg1.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Smoker</h2>
+                    <h3>By:- Andre Schulze</h3>
+                    <p>Price:- Rs.668,724</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/ptg2.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Blue Mountain Lake</h2>
+                    <h3>By:- Andre Schulze</h3>
+                    <p>Price:- Rs.668,724</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/ptg3.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Augustpromenade</h2>
+                    <h3>By:- Nick Powell</h3>
+                    <p>Price:- Rs.261,900</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        &emsp;&emsp;&emsp;
+        <div class = "artbox">
+            <div class = "art">
+                <img src="artworks/ptg5.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>The Valley3</h2>
+                    <h3>By:- Steph Goodger</h3>
+                    <p>Price:- Rs.436,505</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/ptg6.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>Tacheles Window</h2>
+                    <h3>By:- Nick Powell</h3>
+                    <p>Price:- Rs.1,091,259</p>
+                </div>
+            </div>
+        </div>
+        &emsp;&emsp;&emsp;
+        <div class="artbox">
+            <div class = "art">
+                <img src="artworks/ptg4.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class = "detail">
+                <div>
+                    <h2>The Motherland 1</h2>
+                    <h3>By:- Steph Goodger</h3>
+                    <p>Price:- Rs.520,724</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <table style="width: 100%;">
+                        <col style="width:50%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <tr>
+                            <td>
+                                <div class="footer-section-about">
+                                    <h2>LOTUS Art Gallery</h2>
+                                    <p>Lotus art gallery is an online gallery focused on highlighting the best contemporary art.
+                                        Lotus offers consultancy services to both private and corporate clients, working with private collectors and with interior designers, architects and property developers. 
+                                        Lotus provides end-to-end advisory service, from developing art themes and narratives, concept design development, and the commissioning of artworks to project and site specifications.
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer-section-links">
+                                    <h2><br>QUICK LINKS</h2>
+                                    <ul>
+                                        <li><a href = "Index.html">Home</a></li>
+                                        <li><a href = "gallery2.html">Gallery</a></li>
+                                        <li><a href = "artist.html">Artists</a></li>
+                                        <li><a href = "exhibition.html">Exhibition</a></li>
+                                        <li><a href = "contact.html">Contact</a></li> 
+                                    </ul>
+                                </div>    
+                            </td>
+                            <td>
+                                <div class="footer-section-contact">
+                                    <h2>CONTACT US</h2>
+                                    <div class="icon">
+                                        <i class="fa fa-phone" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; +9471-6412956</i><br><br>
+                                        <i class="fa fa-envelope-o" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; lotusartgallery15@gmail.com</i><br><br>
+                                        <i class="fa fa-facebook" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-instagram" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-twitter" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-youtube-play" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i><br>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-bottom">
+                    &copy; LOTUS 2022 | All right reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

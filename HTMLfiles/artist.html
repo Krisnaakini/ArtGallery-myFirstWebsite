@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Artists</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script type="text/javascript" src="register.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav> 
+                <h1>L O T U S</h1>   
+                <ul>
+                    <li><a href = "Index.html">HOME</a></li>
+                    <li>
+                        <div class="gallery"> 
+                            <button class="galbtn" onclick="galList()">GALLERY
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div id="galmenu" class="galmenu">
+                                <a href = "gallery1.html">Art Museum</a>
+                                <a href = "gallery2.html">Paintings</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="active" href = "artist.html">ARTISTS</a></li>
+                    <li><a href = "exhibition.html">EXHIBITION</a></li>
+                    <li><a href = "contact.html">CONTACT</a></li>
+                    <li><a href = "order.html">ORDER</a></li>
+                    <div class="btn">
+                        <button class="register" onclick="openForm()">
+                            <a href="#form" class="regForm">Register</a>
+                        </button>
+                    </div> 
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="registerForm" id="reg_form">
+    
+            <form action="register.php" method="POST" class="form-container">
+                <h1>Registration Form</h1>
+    
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="uname">User Name:</label><br>
+                <input type="text" id="uname" name="uname" required><br>
+                <label for="pwd">Pass word:</label><br>
+                <input type="password" id="pwd" name="pwd" required><br>
+    
+                <input type="submit" class="sbt" value="Submit">
+                <button type="button" class="close" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <div class="arts">
+            <h1 style="text-align:center; color: rgb(240,28,101); font-family: Monotype Corsiva; font-size: 50px;">Artists</h1>
+            <h2 style="text-align:left; color: rgb(240,28,101); font-family: Monotype Corsiva; font-size: 40px;">Historical Artists</h1>
+        </div>
+
+        <div class="container1">
+            <div style="float: left;">
+                <img src="artworks/leonardo.jpg" style="width: 350px; height: 300px;">
+            </div>
+            <div style="text-align:left; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                <h2>Leonardo Da Vinci</h2>
+                <p>
+                    Leonardo was born on April 15, 1452 in Toscany, near Vinci, where he was raised by his grand-parents.
+                    Between 1482 and 1499, he was a painter, sculptor and architect at the court of the 
+                    Sforzas in Milano. At this period, he painted the famous "Last Supper" which marked the beginning 
+                    of the High Renaissance. In 1500, he painted the Mona-Lisa and was busy studying the
+                    human body at a hospital's mortuary. He died in France, on May 2, 1519.
+                </p>
+            </div>
+        </div><br><br><br><br><br>
+        <hr>
+
+        <div class="container1">
+            <div style="float: right;">
+                <img src="artworks/michelangelo.jpg" style="width: 350px; height: 300px;">
+            </div>
+            <div style="text-align:left; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                <h2>Michelangelo</h2>
+                <p>Michelangelo was born on March 6, 1475 in Tuscan town of Caprese.
+                    Between 1946 and 1501, Michelangelo lived in Rome and created, among other wonders, the famous Pietà. 
+                    His fame grew with the creation of the statue of David in Florence, when the artist was just 30 years old. 
+                    In 1534, Michelangelo settled permanently in Rome and dedicated his life to architecture, 
+                    undertaking the direction of the St. Peter's Basilica. He died in Rome, on February 18, 1564.
+                </p>
+            </div>
+        </div><br><br><br>
+        <hr>
+
+        <div class="container1">
+            <div style="float: left;">
+                <img src="artworks/vincent van gogh.jpg" style="width: 350px; height: 300px;">
+            </div>
+            <div style="text-align:left; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                <h2>Vincent van Gogh</h2>
+                <p>Vincent van Gogh was born on March 30, 1853 in Groot-Zundert near Breda(Netherlands).
+                    From 1869, he worked on art market of Hague, London and Paris. In 1879, he decided to start painting under the goodwill of his cousin.
+                    In the city of Mauve, during 1883 to 1885, he painted and drew with ashen and dark colors.
+                    and introduced him as an impressionist painter. On July 27th, 1890, van Gogh shot himself with a gun and died 2 days later.
+                </p>
+            </div>
+        </div><br><br><br>
+        <hr>
+
+        <div class="container1">
+            <div style="float: right;">
+                <img src="artworks/Johannes-vermeer.jpg" style="width: 350px; height: 300px;">
+            </div>
+            <div style="text-align:left; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                <h2>Johannes Vermeer</h2>
+                <p>Leonardo was born on October 31, 1632. He is one of the most famous Dutsch painters. 
+                    His artwork is fascinating because of the color hamonies, the perspective lines and the light effects. 
+                    His favorite topic is to paint women in her house intimacy. 
+                    He died on December 15, 1675.
+                </p>
+            </div>
+        </div><br><br><br><br><br><br><br>
+        <hr>
+
+        <div class="container1">
+            <div style="float: left;">
+                <img src="artworks/Raphael.jpg" style="width: 350px; height: 300px;">
+            </div>
+            <div style="text-align:left; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                <h2>Raphael</h2>
+                <p>Raphael was born on April 6, 1483. Between 1500 and 1504, he lived in Florence and was influenced by Michelangelo and da Vinci.
+                    Raphael made several portraits of known celebrities. Raphael is the one that best embodies this art style. 
+                    His work has influenced several generations of artists worldwide. He died in 1520.
+                </p>
+            </div>
+        </div><br><br><br><br><br><br>
+
+
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <table style="width: 100%;">
+                        <col style="width:50%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <tr>
+                            <td>
+                                <div class="footer-section-about">
+                                    <h2>LOTUS Art Gallery</h2>
+                                    <p>Lotus art gallery is an online gallery focused on highlighting the best contemporary art.
+                                        Lotus offers consultancy services to both private and corporate clients, working with private collectors and with interior designers, architects and property developers. 
+                                        Lotus provides end-to-end advisory service, from developing art themes and narratives, concept design development, and the commissioning of artworks to project and site specifications.
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer-section-links">
+                                    <h2><br>QUICK LINKS</h2>
+                                    <ul>
+                                        <li><a href = "Index.html">Home</a></li>
+                                        <li><a href = "gallery2.html">Gallery</a></li>
+                                        <li><a href = "artist.html">Artists</a></li>
+                                        <li><a href = "exhibition.html">Exhibition</a></li>
+                                        <li><a href = "contact.html">Contact</a></li> 
+                                    </ul>
+                                </div>    
+                            </td>
+                            <td>
+                                <div class="footer-section-contact">
+                                    <h2>CONTACT US</h2>
+                                    <div class="icon">
+                                        <i class="fa fa-phone" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; +9471-6412956</i><br><br>
+                                        <i class="fa fa-envelope-o" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; lotusartgallery15@gmail.com</i><br><br>
+                                        <i class="fa fa-facebook" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-instagram" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-twitter" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-youtube-play" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i><br>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-bottom">
+                    &copy; LOTUS 2022 | All right reserved
+                </div>
+            </div>
+        </footer>
+    
+
+    </body>
+</html>

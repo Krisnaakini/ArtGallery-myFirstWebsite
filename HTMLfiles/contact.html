@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="register.js"></script>
+        
+    </head>
+
+<body>
+    <header>
+        <nav> 
+            <h1>L O T U S</h1>   
+            <ul>
+                <li><a href = "Index.html">HOME</a></li>
+                <li>
+                    <div class="gallery"> 
+                        <button class="galbtn" onclick="galList()">GALLERY
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="galmenu" class="galmenu">
+                            <a href = "gallery1.html">Art Museum</a>
+                            <a href = "gallery2.html">Paintings</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href = "artist.html">ARTISTS</a></li>
+                <li><a href = "exhibition.html">EXHIBITION</a></li>
+                <li><a class="active" href = "contact.html">CONTACT</a></li>
+                <li><a href = "order.html">ORDER</a></li>
+                <div class="btn">
+                    <button class="register" onclick="openForm()">
+                        <a href="#form" class="regForm">Register</a>
+                    </button>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="registerForm" id="reg_form">
+
+        <form action="register.php" method="POST" class="form-container">
+            <h1>Registration Form</h1>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="uname">User Name:</label><br>
+            <input type="text" id="uname" name="uname" required><br>
+            <label for="pwd">Pass word:</label><br>
+            <input type="password" id="pwd" name="pwd" required><br>
+
+            <input type="submit" class="sbt" value="Submit">
+            <button type="button" class="close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class = "page-wrapper">
+        <div class="contact-box">
+            <div class="left" style="background: url('artworks/bgimg4.jpg')no-repeat center;">
+
+            </div>
+            <div class="right">
+                <form action="contact.php" method="POST">
+                    
+                    <h2 style = "text-align: center; color: rgb(240,28,101); font-family: Monotype Corsiva;">CONTACT</h2>
+                    <input type="text" class="field" id="iniName" name="iniName" placeholder="Your Name">
+                    
+                    <input type="text" class="field" id="emAdd" name="emAdd" placeholder="Your Email">
+                    <input type="text" class="field" id="phone" name="phone" placeholder="Your Phone">
+                    <textarea class="field area" id="msg" name="msg" placeholder="Message"> </textarea>
+                    
+                    <button class="sendbtn" id="sendbtn">Send</button>
+                             
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <table style="width: 100%;">
+                    <col style="width:50%">
+                    <col style="width:25%">
+                    <col style="width:25%">
+                    <tr>
+                        <td>
+                            <div class="footer-section-about">
+                                <h2>LOTUS Art Gallery</h2>
+                                <p>Lotus art gallery is an online gallery focused on highlighting the best contemporary art.
+                                    Lotus offers consultancy services to both private and corporate clients, working with private collectors and with interior designers, architects and property developers. 
+                                    Lotus provides end-to-end advisory service, from developing art themes and narratives, concept design development, and the commissioning of artworks to project and site specifications.
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="footer-section-links">
+                                <h2><br>QUICK LINKS</h2>
+                                <ul>
+                                    <li><a href = "Index.html">Home</a></li>
+                                    <li><a href = "gallery2.html">Gallery</a></li>
+                                    <li><a href = "artist.html">Artists</a></li>
+                                    <li><a href = "exhibition.html">Exhibition</a></li>
+                                    <li><a href = "contact.html">Contact</a></li> 
+                                </ul>
+                            </div>    
+                        </td>
+                        <td>
+                            <div class="footer-section-contact">
+                                <h2>CONTACT US</h2>
+                                <div class="icon">
+                                    <i class="fa fa-phone" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; +9471-6412956</i><br><br>
+                                    <i class="fa fa-envelope-o" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; lotusartgallery15@gmail.com</i><br><br>
+                                    <i class="fa fa-facebook" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                    <i class="fa fa-instagram" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                    <i class="fa fa-twitter" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                    <i class="fa fa-youtube-play" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i><br>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-bottom">
+                &copy; LOTUS 2022 | All rights reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+<html>
+    <head>
+        <title>Art Museum</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="register.js"></script>
+    </head>
+
+<body>
+    <header>
+        <nav> 
+            <h1>L O T U S</h1>   
+            <ul>
+                <li><a href = "Index.html">HOME</a></li>
+                <li>
+                    <div class="gallery"> 
+                        <button class="galbtn" onclick="galList()">GALLERY
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="galmenu" class="galmenu">
+                            <a class="active" href = "gallery1.html">Art Museum</a>
+                            <a href = "gallery2.html">Paintings</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href = "artist.html">ARTISTS</a></li>
+                <li><a href = "exhibition.html">EXHIBITION</a></li>
+                <li><a href = "contact.html">CONTACT</a></li>
+                <li><a href = "order.html">ORDER</a></li>
+                <div class="btn">
+                    <button class="register" onclick="openForm()">
+                        <a href="#form" class="regForm">Register</a>
+                    </button>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="registerForm" id="reg_form">
+
+        <form action="register.php" method="POST" class="form-container">
+            <h1>Registration Form</h1>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="uname">User Name:</label><br>
+            <input type="text" id="uname" name="uname" required><br>
+            <label for="pwd">Pass word:</label><br>
+            <input type="password" id="pwd" name="pwd" required><br>
+
+            <input type="submit" class="sbt" value="Submit">
+            <button type="button" class="close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+        <div class="arts">
+            <h1 style="text-align:center; color: rgb(240,28,101); font-family: Monotype Corsiva; font-size: 50px;">Art Museum</h1>
+            <p style="text-align:center; padding-left:10px; padding-right:10px; font-family: Gabriola; font-size:20px; color:rgb(140,40,80);">
+                This museum is a valuable cultural resource that offer you to experience and engage with original works of art from different time periods and cultures.<br>
+                <b>[</b> Point your cursor on each art and see the <b>Title of the art and Name of the artist</b>.<b>]</b>
+            </p>
+        </div>
+        <br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art1.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Mona Lisa</h2>
+                        <h3>By:- Leonardo Da Vinci</h3>
+                    </div>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art2.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Girl with a Pearl Earring</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art3.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Starry Night</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art4.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Harvesters</h2>
+                        <h3>By:- Pieter Bruegel the Elder</h3>
+                    </div>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art5.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Family of King Philip IV</h2>
+                        <h3>By:- Diego de Silva</h3>
+                    </div>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art7.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Almond Blossoms</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art8.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>First Steps (after Millet)</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art9.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Langlois Bridge at Arles</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art10.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Fishing Boats on the Beach at Saints-Maries</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art11.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Yellow House</h2>
+                        <h3>By:- Vincent van Gogh</h3>
+                    </div>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art12.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Girl reading a Letter</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art13.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Woman holding a Balance</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art14.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Glass of Wine</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art15.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Concert</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art16.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Soldier and Laughing Girl</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art17.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Diana and her Companions</h2>
+                        <h3>By:- Johannes Vermeer</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art18.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Last Supper</h2>
+                        <h3>By:- Leonardo Da Vinci</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art30.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>St. Michael</h2>
+                        <h3>By:- Raphael</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art22.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Calling of Saint Matthew</h2>
+                        <h3>By:- Michelangelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art20.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Adoration of the Magi</h2>
+                        <h3>By:- Leonardo Da Vinci</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art21.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Head of a Woman</h2>
+                        <h3>By:- Leonardo Da Vinci</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art23.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Cheaters</h2>
+                        <h3>By:- Michelangelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art24.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Supper at Emmaus</h2>
+                        <h3>By:- Michelangelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art25.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The Lute Player</h2>
+                        <h3>By:- Michelangelo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            &emsp;&emsp;&emsp;
+            <div class = "artbox">
+                <div class = "art">
+                    <img src="artworks/art26.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Medusa, painted on a Leather jousting shield</h2>
+                        <h3>By:- Michelangelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art27.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>The School of Athens</h2>
+                        <h3>By:- Raphael</h3>
+                    </div>
+                </div>
+            </div>
+
+            &emsp;&emsp;&emsp;
+            <div class="artbox">
+                <div class = "art">
+                    <img src="artworks/art29.jpg" style="width: 300px; height: 300px;">
+                </div>
+                <div class = "detail">
+                    <div>
+                        <h2>Madonna with The Christ Child</h2>
+                        <h3>By:- Raphael</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <table style="width: 100%;">
+                        <col style="width:50%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <tr>
+                            <td>
+                                <div class="footer-section-about">
+                                    <h2>LOTUS Art Gallery</h2>
+                                    <p>Lotus art gallery is an online gallery focused on highlighting the best contemporary art.
+                                        Lotus offers consultancy services to both private and corporate clients, working with private collectors and with interior designers, architects and property developers. 
+                                        Lotus provides end-to-end advisory service, from developing art themes and narratives, concept design development, and the commissioning of artworks to project and site specifications.
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="footer-section-links">
+                                    <h2><br>QUICK LINKS</h2>
+                                    <ul>
+                                        <li><a href = "Index.html">Home</a></li>
+                                        <li><a href = "gallery2.html">Gallery</a></li>
+                                        <li><a href = "artist.html">Artists</a></li>
+                                        <li><a href = "exhibition.html">Exhibition</a></li>
+                                        <li><a href = "contact.html">Contact</a></li> 
+                                    </ul>
+                                </div>    
+                            </td>
+                            <td>
+                                <div class="footer-section-contact">
+                                    <h2>CONTACT US</h2>
+                                    <div class="icon">
+                                        <i class="fa fa-phone" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; +9471-6412956</i><br><br>
+                                        <i class="fa fa-envelope-o" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp; lotusartgallery15@gmail.com</i><br><br>
+                                        <i class="fa fa-facebook" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-instagram" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-twitter" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i>
+                                        <i class="fa fa-youtube-play" style="color:  rgba(255, 255, 255, 0.767);" aria-hidden="true">&emsp;</i><br>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-bottom">
+                    &copy; LOTUS 2022 | All right reserved
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
